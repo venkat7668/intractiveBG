@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	height:100%;
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	font-size:16px;
+	overflow:hidden;
+}
+#main,#myself_container,#portfolio_container,#contact_container{
+	height:100%;
+	width:100%;
+	padding:0px;
+	margin:0px auto;	
+	text-align:center;
+	display:table;
+	
+}
+#portfolio_container{
+	background:#b88f49;
+	font-size: 2em;
+}
+#contact_container{
+	background:#49b8b3;
+	font-size: 2em;
+}
+#main{
+	background:#5cc151;
+}
+#main>div{
+	height:100%;
+	display:table-cell;
+	vertical-align:middle;
+}
+#main>div>div{
+	width:850px;
+	margin:0 auto;
+}
+#icons{
+	position:relative;
+	height:200px;
+}
+#icons div{
+	border-radius:80px;
+	border:6px solid #0f857e;
+	width:143px;
+	height:143px;
+	display:inline-block;
+	-webkit-transition: all .06s linear;
+	position:absolute;
+	top:10px;
+	cursor:pointer;
+}
+#icons div:nth-child(2){
+	border-color:#855b27;
+}
+#icons div:nth-child(3){
+	border-color:#5a8e22;
+}
+#icons div:hover{
+	border-radius:90px;
+	width:153px;
+	height:153px;
+	top:5px;	
+	border-color:transparent!important;
+	background-color:transparent;
+}
+#myself{	
+	background:#fff url(../images/venkatl.png) center center no-repeat;	
+	left:75px;
+}
+
+#myself:hover{
+	left:70px;
+}
+#icons div img{
+	opacity:.3;
+	position:relative;
+	top:-8px;
+	left:-9px;
+	width:174px;
+	height:175px;
+	-webkit-transition: opacity .6s linear;
+}
+#icons div:hover img{
+	opacity:1;
+	width:183px;
+	height:188px;
+}
+#portfolio{	
+	background:#fff url(../images/venkatl_portfolio.png) center center no-repeat;
+	left:350px;
+}
+#portfolio:hover{	
+	left:345px;
+}
+#contact{	
+	background:#fff url(../images/venkatl_contact.png) center center no-repeat;
+	left:620px;
+}
+#contact:hover{	
+	left:615px!important;
+}
+#nav ul li{
+	font:bold 2em leelawadee;
+	color:#063b00;
+	display:inline;
+	padding:0 1em;
+	text-align:center;
+	width: 219px;
+	float: left;
+}
+/*animations*/
+.moveBack{
+	-webkit-transform:scale(.95);
+	left:100%!important;
+	z-index:2;
+	-webkit-transition:left .7s .3s,-webkit-transform .3s ease;
+}
+.moveFront{
+	-webkit-transform:scale(1);
+	left:0!important;
+	z-index:1;
+	visibility:visible!important;
+	-webkit-transition:left .9s,-webkit-transform .3s .9s ease;
+}
+/*aboutus*/
+.page{
+	position:absolute;
+	top:0;
+	left:0;
+	overflow:hidden;
+	-webkit-transform-style:preserve-3d;
+}
+#myself_container{
+	background:#03a2a0 url(../images/about_venkat.png) center bottom no-repeat;
+	font-size:2em;
+	
+}
+#myself_container>div{
+	width:750px;
+	margin:0 auto;
+	text-align:left;
+	color:#0b515e;
+	padding:1em;
+}
+.home{
+	width: 5em;
+	height: 2em;
+	-webkit-border-radius: 2em;
+	background: yellow;
+	margin: 0 auto;
+	padding-top: 1em;
+	position: relative;
+	top: -1em;
+	cursor:pointer;
+}
